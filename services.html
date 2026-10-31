@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Still Spring Coaching</title>
+  <meta name="description" content="Explore 1-on-1 coaching, life transition support, and mindset work at Still Spring Coaching." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .services-detail { padding: 5rem 0; }
+    .service-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+    .service-block:nth-child(even) .service-visual { order: -1; }
+    .service-visual {
+      border-radius: 1.5rem;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+    .service-visual--a { background: linear-gradient(135deg, rgba(107,143,113,0.15), rgba(107,143,113,0.05)); }
+    .service-visual--b { background: linear-gradient(135deg, rgba(196,120,74,0.1), rgba(196,120,74,0.04)); }
+    .service-visual--c { background: linear-gradient(135deg, rgba(107,143,113,0.12), rgba(232,221,208,0.4)); }
+    .service-visual--d { background: linear-gradient(135deg, var(--warm), rgba(232,221,208,0.3)); }
+    .service-text h2 { margin-bottom: 0.75rem; }
+    .service-text p  { margin-bottom: 1rem; }
+    .service-includes { list-style: none; padding: 0; margin: 1.25rem 0 1.75rem; }
+    .service-includes li { font-size: 0.9rem; color: var(--muted); padding: 0.35rem 0; padding-left: 1.5rem; position: relative; }
+    .service-includes li::before { content: '→'; position: absolute; left: 0; color: var(--sage); }
+    .price-badge {
+      display: inline-block;
+      background: var(--warm);
+      color: var(--sage-dk);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .service-block { grid-template-columns: 1fr; }
+      .service-block:nth-child(even) .service-visual { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Still<span>Spring</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book a Call</a></li>
+      </ul>
+      <a href="booking.html" class="btn btn-primary nav__cta">Book Free Call</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Services</span>
+      <h1>Choose your path</h1>
+      <p>Every offering is designed to meet you where you are — and move you toward where you want to be.</p>
+    </div>
+  </section>
+
+  <div class="container services-detail">
+
+    <div class="service-block">
+      <div class="service-visual service-visual--a">🌱</div>
+      <div class="service-text">
+        <span class="eyebrow">Most Popular</span>
+        <h2>1-on-1 Coaching</h2>
+        <span class="price-badge">From $[price] / session</span>
+        <p>Dedicated sessions built entirely around your goals. We'll identify what's holding you back, clarify what you actually want, and build a practical path forward.</p>
+        <p>Available as single sessions or packages (4, 8, or 12 weeks).</p>
+        <ul class="service-includes">
+          <li>60-minute video or phone sessions</li>
+          <li>Session notes &amp; action items emailed after</li>
+          <li>Voice message support between sessions</li>
+          <li>Access to resources &amp; worksheets</li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-visual service-visual--b">🧭</div>
+      <div class="service-text">
+        <span class="eyebrow">Navigating Change</span>
+        <h2>Life Transitions</h2>
+        <span class="price-badge">6-week programme</span>
+        <p>Career pivots, relationship changes, moving cities, becoming a parent, losing a role you identified with — transitions are hard, even the good ones.</p>
+        <p>This structured 6-week programme gives you a container to process, plan, and move forward with intention.</p>
+        <ul class="service-includes">
+          <li>6 × 60-minute sessions</li>
+          <li>Transition mapping exercise</li>
+          <li>Values &amp; identity work</li>
+          <li>Ongoing Voxer support</li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-visual service-visual--c">🌿</div>
+      <div class="service-text">
+        <span class="eyebrow">Inner Work</span>
+        <h2>Mindset Coaching</h2>
+        <span class="price-badge">4-week intensive</span>
+        <p>Patterns, beliefs, and stories we carry — often unconsciously — shape every decision we make. This focused 4-week engagement surfaces what's underneath and starts shifting it.</p>
+        <ul class="service-includes">
+          <li>4 × 75-minute deep-dive sessions</li>
+          <li>Belief audit &amp; reframe work</li>
+          <li>Daily micro-practice guidance</li>
+          <li>Personalised affirmations &amp; anchors</li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-visual service-visual--d">✦</div>
+      <div class="service-text">
+        <span class="eyebrow">Free</span>
+        <h2>Discovery Call</h2>
+        <span class="price-badge">30 minutes · No cost</span>
+        <p>Not sure which service is right for you? A discovery call is a relaxed, no-pressure conversation to explore what you're working with and whether we're a good fit.</p>
+        <p>There's no pitch, no obligation. Just an honest conversation.</p>
+        <ul class="service-includes">
+          <li>30 minutes by video or phone</li>
+          <li>Share what's on your mind</li>
+          <li>Get a clear sense of how I work</li>
+          <li>Decide in your own time</li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary">Book Your Free Call</a>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Still not sure?</h2>
+      <p>Send me a message and we'll find the right fit together.</p>
+      <a href="booking.html" class="btn btn-light">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">Still<span style="color:var(--sage)">Spring</span></a>
+          <p>Coaching for clarity, growth, and intentional living.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@stillspringcoaching.com">Email</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">&copy; 2026 Still Spring Coaching. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
