@@ -11,7 +11,7 @@
   --warm:     var(--mist);
   --text:     var(--text-strong);
   --muted:    var(--text-body);
-  --white:    var(--white, #ffffff);
+  /* --white is already #ffffff in tokens.css; do not redefine */
   --font-head: var(--font-display);
   --font-body: var(--font-sans);
   --max:  1248px;
