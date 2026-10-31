@@ -321,7 +321,7 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 
 /* ── Page hero (inner pages) ────────────────────────── */
 .page-hero {
-  background: var(--surface-page);
+  background: var(--surface-alt);
   padding: 56px 0 40px;
 }
 .page-hero h1 {
@@ -523,17 +523,21 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 .footer {
   background: var(--surface-page);
   border-top: 1px solid var(--border-hairline);
-  padding: 40px 0;
+  padding: 48px 0 40px;
   font-size: 14px;
   line-height: 20px;
 }
 .footer__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
-  .footer__inner { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 2rem 3rem; }
+  .footer__inner {
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 2rem 4rem;
+  }
+  .footer__meta-group { grid-column: 3; text-align: right; }
 }
 .footer__logo {
   display: block;
@@ -544,8 +548,11 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 .footer__links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer__links { flex-direction: row; flex-wrap: wrap; gap: 0.5rem 1.5rem; align-self: center; }
 }
 .footer__links a {
   color: var(--text-body);
@@ -557,6 +564,7 @@ p { color: var(--text-body); max-width: var(--measure-body); }
   color: var(--text-body);
   font-size: 13px;
   max-width: none;
+  line-height: 1.8;
 }
 
 /* ── Scroll margin for anchored sections ─────────────── */
