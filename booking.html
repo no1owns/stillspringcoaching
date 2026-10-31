@@ -3,161 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book a Call — Still Spring Coaching</title>
-  <meta name="description" content="Book a free 30-minute discovery call or a coaching session with Still Spring Coaching." />
+  <title>Schedule a Chat | Still Spring Coaching</title>
+  <meta name="description" content="Schedule an introductory chat with Mia Feldbaum at Still Spring Coaching." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">Still<span>Spring</span></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="booking.html">Book a Call</a></li>
-      </ul>
-      <a href="booking.html" class="btn btn-primary nav__cta">Book Free Call</a>
-      <button class="nav__toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">Let's Talk</span>
-      <h1>Book a Session</h1>
-      <p>Start with a free discovery call or go straight to booking the session that's right for you.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container booking-wrap">
-
-      <!-- Info sidebar -->
-      <div class="booking-info">
-        <h3>What to expect</h3>
-        <p>Sessions are held via video call or phone — whatever works best for you. You'll receive a confirmation and a short intake form after booking.</p>
-        <ul>
-          <li>Free 30-min discovery call — no commitment</li>
-          <li>Flexible scheduling across time zones</li>
-          <li>Secure video link sent on confirmation</li>
-          <li>Easy rescheduling up to 24 hours before</li>
+      <a href="index.html" class="nav__logo">Still Spring Coaching</a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="site-nav">
+          <li><a href="services.html">How I Can Help</a></li>
+          <li><a href="about.html">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
         </ul>
-
-        <div style="margin-top:2.5rem;">
-          <h3>Session types</h3>
-          <p style="margin-top:0.5rem;">Not sure which to choose? Select <strong>Discovery Call</strong> — we'll find the right fit together.</p>
-        </div>
-
-        <div style="margin-top:2.5rem; padding:1.5rem; background:var(--warm); border-radius:var(--r);">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong style="color:var(--text);">Have questions first?</strong></p>
-          <p style="font-size:0.88rem;">Email <a href="mailto:hello@stillspringcoaching.com" style="color:var(--sage); text-decoration:underline;">hello@stillspringcoaching.com</a> and I'll get back to you within one business day.</p>
-        </div>
-      </div>
-
-      <!-- Booking form / embed area -->
-      <div class="booking-embed">
-        <h3>Request a booking</h3>
-        <p class="sub">Fill in your details and preferred time — I'll confirm within 24 hours.</p>
-
-        <!--
-          SWAP THIS FORM FOR A CALENDLY / ACUITY / TidyCal EMBED:
-          e.g. <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_LINK" style="min-width:320px;height:700px;"></div>
-               <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        -->
-        <form id="booking-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First name</label>
-              <input type="text" id="fname" name="fname" placeholder="Jane" required />
-            </div>
-            <div class="form-group">
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lname" placeholder="Smith" required />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
-          </div>
-
-          <div class="form-group">
-            <label for="session">Session type</label>
-            <select id="session" name="session" required>
-              <option value="" disabled selected>Choose a session…</option>
-              <option value="discovery">Free Discovery Call (30 min)</option>
-              <option value="1on1">1-on-1 Coaching (60 min)</option>
-              <option value="transition">Life Transitions Programme</option>
-              <option value="mindset">Mindset Coaching Intensive</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="timezone">Your time zone</label>
-            <select id="timezone" name="timezone">
-              <option value="ET">Eastern Time (ET)</option>
-              <option value="CT">Central Time (CT)</option>
-              <option value="MT">Mountain Time (MT)</option>
-              <option value="PT">Pacific Time (PT)</option>
-              <option value="GMT">GMT / London</option>
-              <option value="CET">Central European (CET)</option>
-              <option value="other">Other — I'll mention in notes</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="preferred">Preferred days / times</label>
-            <input type="text" id="preferred" name="preferred" placeholder="e.g. Weekday mornings or Saturday afternoons" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">What brings you here? <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
-            <textarea id="message" name="message" placeholder="Share a little about what you're working with — no pressure to have it all figured out."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-            Send Booking Request
-          </button>
-          <p class="form-notice">By submitting you agree to Still Spring Coaching's privacy policy. Your information will never be shared.</p>
-        </form>
-      </div>
-
+      </nav>
+      <a href="booking.html" class="btn btn-primary nav__cta" aria-current="page">Schedule a Chat</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">Menu</button>
     </div>
-  </section>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Let's talk</p>
+        <h1>Schedule a chat.</h1>
+        <p class="hero__lead">Start with a short, no-pressure conversation. We'll talk about what you're looking for and decide on next steps together.</p>
+      </div>
+    </section>
+
+    <!-- STATUS PANEL -->
+    <section class="section section--raised">
+      <div class="container booking-wrap">
+
+        <div class="scheduling-panel">
+          <h2>Scheduling opens soon</h2>
+          <p>Scheduling isn't open yet. Mia is setting up her calendar and contact details, and introductory chats will be bookable here soon.</p>
+          <button class="btn btn-primary" aria-disabled="true" disabled>Scheduling opens soon</button>
+        </div>
+
+        <div class="what-to-expect">
+          <h2>What to expect</h2>
+          <p><strong>First, we talk.</strong> A short conversation to answer your questions and see if coaching together feels like a good fit.</p>
+          <p><strong>Then we make a plan.</strong> Sessions are one-on-one, usually by phone, with video or local in-person by arrangement.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo">Still<span style="color:var(--sage)">Spring</span></a>
-          <p>Coaching for clarity, growth, and intentional living.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Book a Call</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:hello@stillspringcoaching.com">Email</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">&copy; 2026 Still Spring Coaching. All rights reserved.</div>
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo">Still Spring Coaching</a>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="services.html">How I Can Help</a></li>
+          <li><a href="about.html">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
+          <li><a href="booking.html">Schedule a Chat</a></li>
+        </ul>
+      </nav>
+      <p class="footer__meta">Contact details pending</p>
+      <p class="footer__meta">Privacy policy</p>
+      <p class="footer__meta">&copy; Still Spring Coaching</p>
     </div>
   </footer>
 

@@ -3,130 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Still Spring Coaching</title>
-  <meta name="description" content="Meet the coach behind Still Spring — background, values, and approach to life and wellness coaching." />
+  <title>About Mia | Still Spring Coaching</title>
+  <meta name="description" content="Meet Mia Feldbaum, coach in training at Still Spring Coaching." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">Still<span>Spring</span></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="booking.html">Book a Call</a></li>
-      </ul>
-      <a href="booking.html" class="btn btn-primary nav__cta">Book Free Call</a>
-      <button class="nav__toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="nav__logo">Still Spring Coaching</a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="site-nav">
+          <li><a href="services.html">How I Can Help</a></li>
+          <li><a href="about.html" aria-current="page">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
+        </ul>
+      </nav>
+      <a href="booking.html" class="btn btn-primary nav__cta">Schedule a Chat</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">Menu</button>
     </div>
-  </nav>
+  </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">About the Coach</span>
-      <h1>Hi, I'm [Your Name]</h1>
-      <p>Certified life coach, former [background], and firm believer that stillness is where real growth begins.</p>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- BIO -->
-  <section class="section">
-    <div class="container about-bio">
-      <div class="about-photo">
-        <span>Your photo here</span>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">About Mia</p>
+        <h1>Meet Mia.</h1>
+        <p class="hero__lead">I take what you're facing seriously, without believing every conversation has to be heavy. We might explore an old expectation, work through a practical challenge, or share a laugh along the way.</p>
       </div>
-      <div class="about-text">
-        <span class="eyebrow">My Story</span>
-        <h2>From burned out to grounded</h2>
-        <p>For years I was the person who had it all — on paper. A demanding job, a full calendar, and a growing sense that something wasn't quite right. I kept moving faster, hoping to outrun the feeling.</p>
-        <p>It wasn't until I stopped — really stopped — that I found what I was looking for. Still Spring Coaching grew out of that experience: a conviction that the answers we're looking for don't come from doing more, but from learning to listen to what's already there.</p>
-        <p>I trained as a [certification] coach and have worked with clients across industries and life stages. What stays the same is the approach: curious, honest, and completely client-led.</p>
-        <p><em>"My job isn't to tell you where to go. It's to help you hear your own voice clearly enough to know."</em></p>
-        <div class="credentials">
-          <span class="credential-badge">ICF Certified Coach</span>
-          <span class="credential-badge">Mindfulness Practitioner</span>
-          <span class="credential-badge">[Your Certification]</span>
-          <span class="credential-badge">[Years] years experience</span>
+    </section>
+
+    <!-- BIO -->
+    <section class="section section--raised">
+      <div class="container about-bio">
+        <div class="about-photo">
+          <span class="about-photo__label">Portrait to be supplied</span>
+        </div>
+        <div class="about-text">
+          <h2>Hi, I'm Mia Feldbaum.</h2>
+          <p>I believe disability and neurodivergence are natural parts of human diversity. But navigating our own needs, other people's expectations, and the systems around us can be complicated. I'm interested in both the practical, day-to-day parts of life and the beliefs we carry about how life is supposed to look.</p>
+          <p>My background includes a master's degree in Cultural Foundations of Education and a Certificate of Advanced Study in Disability Studies. I'm currently completing coach training through The Coach Approach Training Institute and working toward professional credentialing.</p>
+          <blockquote class="pull-quote">&ldquo;I take you seriously. We can still laugh.&rdquo;</blockquote>
+          <p class="about-byline">Mia Feldbaum &bull; Coach in training</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VALUES -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="text-center">
-        <span class="eyebrow">How I Work</span>
-        <h2>Principles I coach by</h2>
-      </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="icon">🌊</div>
-          <h4>Presence</h4>
-          <p>Every session is fully yours. No agenda, no rushing — just focused attention on where you are right now.</p>
-        </div>
-        <div class="value-card">
-          <div class="icon">🌿</div>
-          <h4>Honesty</h4>
-          <p>I'll reflect back what I observe, kindly but clearly. Growth rarely happens in a comfort zone.</p>
-        </div>
-        <div class="value-card">
-          <div class="icon">🌱</div>
-          <h4>Curiosity</h4>
-          <p>We ask better questions together. Judgment has no place here — only genuine exploration.</p>
-        </div>
-        <div class="value-card">
-          <div class="icon">✦</div>
-          <h4>Your Lead</h4>
-          <p>You are the expert on your own life. I provide the space, structure, and reflection — you provide the direction.</p>
+    <!-- WHAT IT'S LIKE -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="eyebrow">What it's like to work with me</p>
+        <div class="cols">
+          <div>
+            <p class="num">01</p>
+            <h3>Serious and light</h3>
+            <p>I take what you're facing seriously, without believing every conversation has to be heavy.</p>
+          </div>
+          <div>
+            <p class="num">02</p>
+            <h3>Honest</h3>
+            <p>I might challenge you with a question, and we might laugh about the absurdity of being human.</p>
+          </div>
+          <div>
+            <p class="num">03</p>
+            <h3>Yours</h3>
+            <p>The goal isn't to hand you someone else's formula. It's to help you discover what fits you.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Let's have a conversation</h2>
-      <p>A free 30-minute discovery call is the best way to see if we're a good fit.</p>
-      <a href="booking.html" class="btn btn-light">Book Your Free Call</a>
-    </div>
-  </section>
+    <!-- CTA -->
+    <section class="cta-banner is-inverse">
+      <div class="container">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Curious if coaching might help?</h2>
+        <p>Start with a short, no-pressure conversation. We'll talk about what you're looking for and decide on next steps together.</p>
+        <a href="booking.html" class="btn btn-light btn-block-sm">Schedule an introductory chat</a>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo">Still<span style="color:var(--sage)">Spring</span></a>
-          <p>Coaching for clarity, growth, and intentional living.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Book a Call</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:hello@stillspringcoaching.com">Email</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">&copy; 2026 Still Spring Coaching. All rights reserved.</div>
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo">Still Spring Coaching</a>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="services.html">How I Can Help</a></li>
+          <li><a href="about.html">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
+          <li><a href="booking.html">Schedule a Chat</a></li>
+        </ul>
+      </nav>
+      <p class="footer__meta">Contact details pending</p>
+      <p class="footer__meta">Privacy policy</p>
+      <p class="footer__meta">&copy; Still Spring Coaching</p>
     </div>
   </footer>
 

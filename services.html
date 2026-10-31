@@ -3,190 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — Still Spring Coaching</title>
-  <meta name="description" content="Explore 1-on-1 coaching, life transition support, and mindset work at Still Spring Coaching." />
+  <title>How I Can Help | Still Spring Coaching</title>
+  <meta name="description" content="Individual coaching for adults navigating change, neurodivergence, disability, and expectations that don't quite fit." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .services-detail { padding: 5rem 0; }
-    .service-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-      margin-bottom: 5rem;
-    }
-    .service-block:nth-child(even) .service-visual { order: -1; }
-    .service-visual {
-      border-radius: 1.5rem;
-      aspect-ratio: 4/3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 5rem;
-    }
-    .service-visual--a { background: linear-gradient(135deg, rgba(107,143,113,0.15), rgba(107,143,113,0.05)); }
-    .service-visual--b { background: linear-gradient(135deg, rgba(196,120,74,0.1), rgba(196,120,74,0.04)); }
-    .service-visual--c { background: linear-gradient(135deg, rgba(107,143,113,0.12), rgba(232,221,208,0.4)); }
-    .service-visual--d { background: linear-gradient(135deg, var(--warm), rgba(232,221,208,0.3)); }
-    .service-text h2 { margin-bottom: 0.75rem; }
-    .service-text p  { margin-bottom: 1rem; }
-    .service-includes { list-style: none; padding: 0; margin: 1.25rem 0 1.75rem; }
-    .service-includes li { font-size: 0.9rem; color: var(--muted); padding: 0.35rem 0; padding-left: 1.5rem; position: relative; }
-    .service-includes li::before { content: '→'; position: absolute; left: 0; color: var(--sage); }
-    .price-badge {
-      display: inline-block;
-      background: var(--warm);
-      color: var(--sage-dk);
-      font-size: 0.82rem;
-      font-weight: 500;
-      padding: 0.35rem 0.9rem;
-      border-radius: 50px;
-      margin-bottom: 1.25rem;
-    }
-    @media (max-width: 768px) {
-      .service-block { grid-template-columns: 1fr; }
-      .service-block:nth-child(even) .service-visual { order: 0; }
-    }
-  </style>
 </head>
 <body>
 
-  <nav class="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">Still<span>Spring</span></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="booking.html">Book a Call</a></li>
-      </ul>
-      <a href="booking.html" class="btn btn-primary nav__cta">Book Free Call</a>
-      <button class="nav__toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">Services</span>
-      <h1>Choose your path</h1>
-      <p>Every offering is designed to meet you where you are — and move you toward where you want to be.</p>
-    </div>
-  </section>
-
-  <div class="container services-detail">
-
-    <div class="service-block">
-      <div class="service-visual service-visual--a">🌱</div>
-      <div class="service-text">
-        <span class="eyebrow">Most Popular</span>
-        <h2>1-on-1 Coaching</h2>
-        <span class="price-badge">From $[price] / session</span>
-        <p>Dedicated sessions built entirely around your goals. We'll identify what's holding you back, clarify what you actually want, and build a practical path forward.</p>
-        <p>Available as single sessions or packages (4, 8, or 12 weeks).</p>
-        <ul class="service-includes">
-          <li>60-minute video or phone sessions</li>
-          <li>Session notes &amp; action items emailed after</li>
-          <li>Voice message support between sessions</li>
-          <li>Access to resources &amp; worksheets</li>
+      <a href="index.html" class="nav__logo">Still Spring Coaching</a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="site-nav">
+          <li><a href="services.html" aria-current="page">How I Can Help</a></li>
+          <li><a href="about.html">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
         </ul>
-        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+      </nav>
+      <a href="booking.html" class="btn btn-primary nav__cta">Schedule a Chat</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">How I can help</p>
+        <h1>A place to start, wherever you are.</h1>
+        <p class="hero__lead">Individual coaching for adults navigating change, neurodivergence, disability, and expectations that don't quite fit.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="service-block">
-      <div class="service-visual service-visual--b">🧭</div>
-      <div class="service-text">
-        <span class="eyebrow">Navigating Change</span>
-        <h2>Life Transitions</h2>
-        <span class="price-badge">6-week programme</span>
-        <p>Career pivots, relationship changes, moving cities, becoming a parent, losing a role you identified with — transitions are hard, even the good ones.</p>
-        <p>This structured 6-week programme gives you a container to process, plan, and move forward with intention.</p>
-        <ul class="service-includes">
-          <li>6 × 60-minute sessions</li>
-          <li>Transition mapping exercise</li>
-          <li>Values &amp; identity work</li>
-          <li>Ongoing Voxer support</li>
-        </ul>
-        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+    <!-- THREE STARTING POINTS -->
+    <section class="section section--raised">
+      <div class="container">
+        <div class="cols-cards">
+          <div class="card card--accent">
+            <p class="num">01</p>
+            <h3>New information</h3>
+            <p>Making sense of an ADHD or autism diagnosis, for yourself or someone you love.</p>
+            <p>You or someone you love is newly diagnosed, and you're wondering what comes next.</p>
+          </div>
+          <div class="card">
+            <p class="num">02</p>
+            <h3>Old expectations</h3>
+            <p>Questioning what you &ldquo;should&rdquo; do and exploring an approach that actually fits.</p>
+            <p>Something that used to work no longer feels right, and you're ready to consider a different way.</p>
+          </div>
+          <div class="card">
+            <p class="num">03</p>
+            <h3>Too much at once</h3>
+            <p>Untangling competing ideas, responsibilities and decisions to move forward.</p>
+            <p>You have a lot of ideas, questions, or possibilities, and could use help making sense of where to begin.</p>
+          </div>
+        </div>
+        <p class="section-closing">You don't have to sort it all out before reaching out.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="service-block">
-      <div class="service-visual service-visual--c">🌿</div>
-      <div class="service-text">
-        <span class="eyebrow">Inner Work</span>
-        <h2>Mindset Coaching</h2>
-        <span class="price-badge">4-week intensive</span>
-        <p>Patterns, beliefs, and stories we carry — often unconsciously — shape every decision we make. This focused 4-week engagement surfaces what's underneath and starts shifting it.</p>
-        <ul class="service-includes">
-          <li>4 × 75-minute deep-dive sessions</li>
-          <li>Belief audit &amp; reframe work</li>
-          <li>Daily micro-practice guidance</li>
-          <li>Personalised affirmations &amp; anchors</li>
-        </ul>
-        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+    <!-- CONVERSATION PARAGRAPH -->
+    <section class="section section--alt">
+      <div class="container section--narrow">
+        <h2>A different kind of coaching conversation.</h2>
+        <p>I take what you're facing seriously, without believing every conversation has to be heavy. We might question an old assumption, explore a practical challenge, or laugh about the absurdity of being human. My job is to help you get clearer about what you want and experiment with ways to move toward it. The goal isn't to hand you someone else's formula. It's to help you discover what fits you.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="service-block">
-      <div class="service-visual service-visual--d">✦</div>
-      <div class="service-text">
-        <span class="eyebrow">Free</span>
-        <h2>Discovery Call</h2>
-        <span class="price-badge">30 minutes · No cost</span>
-        <p>Not sure which service is right for you? A discovery call is a relaxed, no-pressure conversation to explore what you're working with and whether we're a good fit.</p>
-        <p>There's no pitch, no obligation. Just an honest conversation.</p>
-        <ul class="service-includes">
-          <li>30 minutes by video or phone</li>
-          <li>Share what's on your mind</li>
-          <li>Get a clear sense of how I work</li>
-          <li>Decide in your own time</li>
-        </ul>
-        <a href="booking.html" class="btn btn-primary">Book Your Free Call</a>
+    <!-- WORKING TOGETHER -->
+    <section class="section section--raised" id="working-together">
+      <div class="container">
+        <p class="eyebrow">Working together</p>
+        <h2>A supportive process, shaped around you.</h2>
+        <div class="cols">
+          <div>
+            <p class="num">01</p>
+            <h3>Start with a conversation</h3>
+            <p>A short introductory chat to explore what you're looking for and see if we're a good fit.</p>
+          </div>
+          <div>
+            <p class="num">02</p>
+            <h3>Find new perspectives</h3>
+            <p>We look at what's happening, challenge assumptions, and consider new possibilities.</p>
+          </div>
+          <div>
+            <p class="num">03</p>
+            <h3>Take meaningful steps</h3>
+            <p>We identify practical experiments that make sense for your life and circumstances.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <!-- HOW SESSIONS WORK -->
+    <section class="section">
+      <div class="container section--narrow">
+        <h2>How sessions work</h2>
+        <p>Sessions are one-on-one, usually by phone. Video calls and local in-person meetings may also be possible by arrangement.</p>
+        <p>I'm currently offering reduced-rate coaching as I complete my training. We can discuss the details when we connect.</p>
+        <p class="proposed-note">Coaching is not therapy and does not replace mental health care.</p>
+      </div>
+    </section>
 
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Still not sure?</h2>
-      <p>Send me a message and we'll find the right fit together.</p>
-      <a href="booking.html" class="btn btn-light">Get in Touch</a>
-    </div>
-  </section>
+    <!-- CTA -->
+    <section class="cta-banner is-inverse">
+      <div class="container">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Curious if coaching might help?</h2>
+        <p>Start with a short, no-pressure conversation. We'll talk about what you're looking for and decide on next steps together.</p>
+        <a href="booking.html" class="btn btn-light btn-block-sm">Schedule an introductory chat</a>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo">Still<span style="color:var(--sage)">Spring</span></a>
-          <p>Coaching for clarity, growth, and intentional living.</p>
-        </div>
-        <div class="footer__col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Book a Call</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:hello@stillspringcoaching.com">Email</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">&copy; 2026 Still Spring Coaching. All rights reserved.</div>
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo">Still Spring Coaching</a>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="services.html">How I Can Help</a></li>
+          <li><a href="about.html">About Mia</a></li>
+          <li><a href="services.html#working-together">Working Together</a></li>
+          <li><a href="booking.html">Schedule a Chat</a></li>
+        </ul>
+      </nav>
+      <p class="footer__meta">Contact details pending</p>
+      <p class="footer__meta">Privacy policy</p>
+      <p class="footer__meta">&copy; Still Spring Coaching</p>
     </div>
   </footer>
 
