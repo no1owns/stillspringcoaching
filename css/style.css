@@ -5,7 +5,6 @@
 
 /* ── Legacy aliases (keeps old class names working) ── */
 :root {
-  --cream:    var(--surface-page);
   --sage:     var(--teal);
   --sage-dk:  var(--ink);
   --warm:     var(--mist);
