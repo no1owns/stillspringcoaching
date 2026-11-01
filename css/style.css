@@ -293,29 +293,10 @@ p { color: var(--text-body); max-width: var(--measure-body); }
   .hero__media img { aspect-ratio: var(--aspect-hero-tablet); }
 }
 @media (min-width: 1200px) {
-  .hero {
-    position: relative;
-    padding: 104px 0 112px;
-    background-image: url(../assets/img/hero-background-1200.webp);
-    background-size: cover;
-    background-position: var(--focus-hero-bg);
-    background-repeat: no-repeat;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: calc(var(--margin-desktop) + 650px + 96px);
-    background: linear-gradient(90deg, var(--scrim-hero) 0, var(--scrim-hero) calc(100% - 96px), transparent 100%);
-  }
-  .hero > .container { position: relative; }
-  .hero__title { font-size: 72px; line-height: 83px; letter-spacing: -0.5px; margin-top: 29px; max-width: 650px; }
+  .hero__title { font-size: 72px; line-height: 83px; margin-top: 29px; max-width: 650px; }
   .hero__lead  { margin-top: 29px; }
   .hero__actions { margin-top: 48px; }
   .hero__media { display: none; }
-}
-@media (min-width: 1440px) {
-  .hero { background-image: url(../assets/img/hero-background-1672.webp); }
 }
 
 /* ── Page hero (inner pages) ────────────────────────── */
@@ -632,3 +613,32 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 
 /* Header total 116px (115px inner + 1px border) */
 @media (min-width: 1200px) { .nav__inner { min-height: 115px; } }
+
+/* ═══ Hero background (fitted to the Figma export of the hero at 1440) ═══
+   Requires --hero-ground token in tokens.css. Replaces the old 92% scrim approach.
+   1200–1439: image at 254px left offset, clipped right so leaves stay clear of headline.
+   1440+: image is right-aligned. */
+@media (min-width: 1200px) {
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: var(--hero-ground);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: auto;
+    top: 0; bottom: 0; left: 254px; right: auto;
+    width: auto;
+    aspect-ratio: 1672 / 941;
+    background:
+      linear-gradient(90deg, rgb(245 245 245 / 1) -8.3%, rgb(245 245 245 / 0) 81.1%),
+      url(../assets/img/hero-background-1672.webp) center / cover no-repeat;
+  }
+  .hero__title { letter-spacing: 0; }
+}
+@media (min-width: 1440px) {
+  .hero::before { left: auto; right: 0; max-width: 100%; }
+}
