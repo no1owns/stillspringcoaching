@@ -3,147 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How I Can Help | Still Spring Coaching</title>
-  <meta name="description" content="Individual coaching for adults navigating change, neurodivergence, disability, and expectations that don't quite fit." />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/monogram-32.png" />
-  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon-180.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Still Spring Coaching</title>
+  <!--
+    CONTENT REVIEW NOTE — services.html retired 2026-11-03
+    The content that was here has been consolidated into the homepage.
+    Key sections now live at:
+      How I Can Help   → index.html#how-i-can-help
+      Working Together → index.html#working-together
+    Unique content from services.html preserved below for reference:
+
+    Session details (not yet confirmed for homepage):
+      "Sessions are one-on-one, usually by phone. Video calls and
+       local in-person meetings may also be possible by arrangement."
+      "I'm currently offering reduced-rate coaching as I complete
+       my training. We can discuss the details when we connect."
+    Three starting points (extended copy, not on homepage):
+      Card 01 extended: "You or someone you love is newly diagnosed,
+        and you're wondering what comes next."
+      Card 02 extended: "Something that used to work no longer feels
+        right, and you're ready to consider a different way."
+      Card 03 extended: "You have a lot of ideas, questions, or
+        possibilities, and could use help making sense of where to begin."
+    Conversation paragraph (not on homepage):
+      "A different kind of coaching conversation." section.
+    Section closing line: "You don't have to sort it all out before
+      reaching out."
+    Disclaimer: "Coaching is not therapy and does not replace mental
+      health care."
+  -->
+  <!-- Redirect: services.html → index.html#how-i-can-help
+       services.html#working-together → index.html#working-together -->
+  <meta http-equiv="refresh" content="0; url=index.html#how-i-can-help" />
+  <script>
+    (function () {
+      var dest = window.location.hash === '#working-together'
+        ? 'index.html#working-together'
+        : 'index.html#how-i-can-help';
+      window.location.replace(dest);
+    }());
+  </script>
 </head>
 <body>
-
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="nav">
-    <div class="container nav__inner">
-      <a href="index.html" class="nav__logo"><img src="assets/brand/logo-lockup-768w.png" width="192" height="64" alt="Still Spring Coaching" /></a>
-      <nav aria-label="Primary">
-        <ul class="nav__links" id="site-nav">
-          <li><a href="services.html" aria-current="page">How I Can Help</a></li>
-          <li><a href="about.html">About Mia</a></li>
-          <li><a href="services.html#working-together">Working Together</a></li>
-        </ul>
-      </nav>
-      <a href="booking.html" class="btn btn-primary nav__cta">Schedule a Chat</a>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">Menu</button>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- PAGE HERO -->
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">How I can help</p>
-        <h1>A place to start, wherever you are.</h1>
-        <p class="hero__lead">Individual coaching for adults navigating change, neurodivergence, disability, and expectations that don't quite fit.</p>
-      </div>
-    </section>
-
-    <!-- THREE STARTING POINTS -->
-    <section class="section section--raised">
-      <div class="container">
-        <div class="cols-cards">
-          <div class="card card--accent">
-            <p class="num">01</p>
-            <h3>New information</h3>
-            <p>Making sense of an ADHD or autism diagnosis, for yourself or someone you love.</p>
-            <p>You or someone you love is newly diagnosed, and you're wondering what comes next.</p>
-          </div>
-          <div class="card">
-            <p class="num">02</p>
-            <h3>Old expectations</h3>
-            <p>Questioning what you &ldquo;should&rdquo; do and exploring an approach that actually fits.</p>
-            <p>Something that used to work no longer feels right, and you're ready to consider a different way.</p>
-          </div>
-          <div class="card">
-            <p class="num">03</p>
-            <h3>Too much at once</h3>
-            <p>Untangling competing ideas, responsibilities and decisions to move forward.</p>
-            <p>You have a lot of ideas, questions, or possibilities, and could use help making sense of where to begin.</p>
-          </div>
-        </div>
-        <p class="section-closing">You don't have to sort it all out before reaching out.</p>
-      </div>
-    </section>
-
-    <!-- CONVERSATION PARAGRAPH -->
-    <section class="section section--alt">
-      <div class="container section--narrow">
-        <h2>A different kind of coaching conversation.</h2>
-        <p>I take what you're facing seriously, without believing every conversation has to be heavy. We might question an old assumption, explore a practical challenge, or laugh about the absurdity of being human. My job is to help you get clearer about what you want and experiment with ways to move toward it. The goal isn't to hand you someone else's formula. It's to help you discover what fits you.</p>
-      </div>
-    </section>
-
-    <!-- WORKING TOGETHER -->
-    <section class="section section--raised" id="working-together">
-      <div class="container">
-        <p class="eyebrow">Working together</p>
-        <h2>A supportive process, shaped around you.</h2>
-        <div class="cols">
-          <div>
-            <p class="num">01</p>
-            <h3>Start with a conversation</h3>
-            <p>A short introductory chat to explore what you're looking for and see if we're a good fit.</p>
-          </div>
-          <div>
-            <p class="num">02</p>
-            <h3>Find new perspectives</h3>
-            <p>We look at what's happening, challenge assumptions, and consider new possibilities.</p>
-          </div>
-          <div>
-            <p class="num">03</p>
-            <h3>Take meaningful steps</h3>
-            <p>We identify practical experiments that make sense for your life and circumstances.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW SESSIONS WORK -->
-    <section class="section">
-      <div class="container section--narrow">
-        <h2>How sessions work</h2>
-        <p>Sessions are one-on-one, usually by phone. Video calls and local in-person meetings may also be possible by arrangement.</p>
-        <p>I'm currently offering reduced-rate coaching as I complete my training. We can discuss the details when we connect.</p>
-        <p class="proposed-note">Coaching is not therapy and does not replace mental health care.</p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-banner is-inverse">
-      <div class="container">
-        <p class="eyebrow">Let's talk</p>
-        <h2>Curious if coaching might help?</h2>
-        <p>Start with a short, no-pressure conversation. We'll talk about what you're looking for and decide on next steps together.</p>
-        <a href="booking.html" class="btn btn-light btn-block-sm">Schedule an introductory chat</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <a href="index.html" class="footer__logo"><img src="assets/brand/logo-lockup-768w.png" width="192" height="64" alt="Still Spring Coaching" /></a>
-      <nav aria-label="Footer">
-        <ul class="footer__links">
-          <li><a href="services.html">How I Can Help</a></li>
-          <li><a href="about.html">About Mia</a></li>
-          <li><a href="services.html#working-together">Working Together</a></li>
-          <li><a href="booking.html">Schedule a Chat</a></li>
-        </ul>
-      </nav>
-      <div class="footer__meta-group">
-        <p class="footer__meta">Contact details pending</p>
-        <p class="footer__meta">Privacy policy</p>
-        <p class="footer__meta">&copy; Still Spring Coaching</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <p>Redirecting&hellip; <a href="index.html#how-i-can-help">Go to How I Can Help</a></p>
 </body>
 </html>
