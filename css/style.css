@@ -583,7 +583,7 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 /* Working together, 473px: rule, numeral, DM Sans step title */
 .steps { display: grid; gap: 32px; }
 .step { border-top: 1px solid var(--border-hairline); padding-top: 19px; }
-.step__num { font: 400 33px/42px var(--font-display); font-variation-settings: "SOFT" 0, "WONK" 1; color: var(--text-accent); margin-bottom: 17px; }
+.step__num { display: block; line-height: 0; color: var(--text-accent); margin: 0 0 20px; }
 .step__title { font: 500 23px/34px var(--font-sans); font-variation-settings: normal; color: var(--text-strong); margin-bottom: 22px; }
 .step__text { font-size: 17px; line-height: 26px; max-width: 350px; }
 @media (min-width: 1200px) {
