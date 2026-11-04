@@ -551,7 +551,7 @@ p { color: var(--text-body); max-width: var(--measure-body); }
 .meet__text h2 { margin-top: 20px; }
 .meet__lead { font-size: 19px; line-height: 29px; margin-top: 24px; max-width: 625px; }
 .meet__byline { font: 500 15px/22px var(--font-sans); color: var(--text-accent); margin-top: 32px; }
-.meet__text .btn { margin-top: 20px; }
+.meet__text .btn { margin-top: 32px; }
 .meet .eyebrow { margin-bottom: 0; }
 @media (min-width: 768px) { .meet { padding: var(--section-pad-tablet) 0; } }
 @media (min-width: 1200px) {
