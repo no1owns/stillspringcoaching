@@ -68,7 +68,7 @@
   --measure-body: 65ch;
   --rail-width: 2px;
   --font-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
-  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-quote: "Cormorant Garamond", Georgia, serif;
 }
 .display-hero { font-family: var(--font-display); font-size: 72px; line-height: 83px; font-weight: 400; letter-spacing: -0.5px; }
