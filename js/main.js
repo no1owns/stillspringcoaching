@@ -1,37 +1,20 @@
-/* ── Nav toggle ───────────────────────────────── */
 const toggle = document.querySelector('.nav__toggle');
-const links  = document.querySelector('.nav__links');
-
+const links = document.querySelector('.nav__links');
+const desktop = window.matchMedia('(min-width: 1200px)');
 if (toggle && links) {
+  const close = (restoreFocus = false) => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) toggle.focus();
+  };
   toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    links.classList.toggle('open');
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    links.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
   });
-
-  /* Close on Escape */
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && links.classList.contains('open')) {
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.focus();
-    }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && links.classList.contains('open')) close(true);
   });
-
-  /* Close when a nav link is clicked */
-  links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
+  links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => close()));
+  desktop.addEventListener('change', () => close());
 }
-
-/* ── Active page link (aria-current) ─────────── */
-const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav__links a').forEach(a => {
-  const href = a.getAttribute('href').split('#')[0];
-  if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-    a.setAttribute('aria-current', 'page');
-  }
-});
