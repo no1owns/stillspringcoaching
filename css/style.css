@@ -809,3 +809,5 @@ details p { margin: 16px 0 8px; }
 @media (max-width: 767px) {
  .icon-heading { flex-direction: column; gap: 20px; }
 }
+.mia-portrait { width: 100%; max-width: 480px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; }
+@media (max-width: 767px) { .mia-portrait { margin-inline: auto; } }
