@@ -18,3 +18,9 @@ if (toggle && links) {
   links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => close()));
   desktop.addEventListener('change', () => close());
 }
+
+// Native named disclosures work without JS; this also supports older browsers.
+const faqs = [...document.querySelectorAll('details[name="coaching-faq"]')];
+faqs.forEach(faq => faq.addEventListener('toggle', () => {
+  if (faq.open) faqs.forEach(other => { if (other !== faq) other.open = false; });
+}));
