@@ -916,3 +916,15 @@ details p { margin: 16px 0 8px; }
   .wt-hero__media img { width: 556px; height: 416px; aspect-ratio: auto; }
   .coaching-therapy h2 { font-size: 44px; line-height: 48px; }
 }
+
+/* Restore the standard section top padding on the Working Together diagnosis band.
+   Overrides the 24px rule for sections that follow a page hero. */
+.editorial-page > .page-hero + .section.wt-diagnosis { padding-top: var(--section-pad-mobile); }
+@media (min-width: 768px) {
+  .editorial-page > .page-hero + .section.wt-diagnosis { padding-top: var(--section-pad-tablet); }
+}
+@media (min-width: 1200px) {
+  .editorial-page > .page-hero + .section.wt-diagnosis { padding-top: var(--section-pad-desktop); }
+}
+.editorial-page > .page-hero.booking-hero { background: var(--mist); }
+
