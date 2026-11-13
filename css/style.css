@@ -889,3 +889,30 @@ details p { margin: 16px 0 8px; }
   .rate { font-size: 38px; line-height: 42px; }
   .quote-panel .quote-lead { font-size: 28px; line-height: 32px; }
 }
+
+/* ═══ Pass 2: Working Together matches the approved frame (139:2) ═══ */
+.editorial-page > .page-hero.wt-hero { background: var(--mist); }
+.wt-hero__inner { display: grid; gap: 40px; align-items: center; }
+.wt-hero__media { margin: 0; }
+.wt-hero__media img { width: 100%; height: auto; aspect-ratio: 556 / 416; object-fit: cover; border-radius: 8px; }
+.wt-hero__copy h1 { font-size: 40px; line-height: 46px; }
+.wt-hero__copy .intro-columns { gap: 16px; margin-top: 24px; }
+.editorial-page > .wt-diagnosis { background: var(--white); }
+.ct-scope { display: grid; gap: 16px; max-width: 816px; }
+.ct-scope p { margin: 0; }
+.ct-columns { display: grid; gap: 40px; margin-top: 48px; }
+.ct-col { display: grid; gap: 18px; align-content: start; }
+.ct-col img { width: 100%; height: 176px; object-fit: cover; border-radius: 4px; }
+.ct-col p { margin: 0; }
+@media (min-width: 768px) {
+  .wt-hero__copy h1 { font-size: 56px; line-height: 64px; }
+}
+@media (min-width: 1024px) {
+  .ct-columns { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .wt-hero__inner { grid-template-columns: minmax(0, 620px) 556px; gap: 72px; }
+  .wt-hero__copy h1 { font-size: 72px; line-height: 76px; }
+  .wt-hero__media img { width: 556px; height: 416px; aspect-ratio: auto; }
+  .coaching-therapy h2 { font-size: 44px; line-height: 48px; }
+}
