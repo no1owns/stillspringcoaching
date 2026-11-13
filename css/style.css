@@ -945,3 +945,14 @@ details p { margin: 16px 0 8px; }
   .editorial-page > .page-hero + .section.contact-section { padding-top: var(--section-pad-desktop); }
 }
 
+/* Top padding for "My background" to match neighbouring sections on phones and tablet (48px, 72px). */
+.editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.about-background:not(.section--alt) { padding-top: 48px; }
+@media (min-width: 768px) {
+  .editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.about-background:not(.section--alt) { padding-top: 72px; }
+}
+@media (min-width: 1200px) {
+  .editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.about-background:not(.section--alt) { padding-top: var(--section-pad-desktop); }
+}
+/* Space between the Schedule a Chat H1 and its first paragraph, matching the Working Together hero (24px). */
+.booking-hero h1 + p { margin-top: 24px; }
+
