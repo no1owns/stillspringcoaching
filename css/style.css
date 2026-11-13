@@ -876,7 +876,7 @@ details p { margin: 16px 0 8px; }
     top: 0; bottom: auto; left: auto; right: 0;
     width: 995px; height: 560px; aspect-ratio: auto;
     background:
-      linear-gradient(90deg, rgb(245 245 245 / 1) 0%, rgb(245 245 245 / 0) 81.1%),
+      linear-gradient(90deg, rgb(248 247 242 / 1) 0%, rgb(248 247 242 / 0) 81.1%),
       url(../assets/img/hero-light-through-water-1844.webp) center / cover no-repeat;
   }
   .editorial-page h2 { font-size: 48px; line-height: 52px; }
