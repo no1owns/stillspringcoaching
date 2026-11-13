@@ -928,3 +928,20 @@ details p { margin: 16px 0 8px; }
 }
 .editorial-page > .page-hero.booking-hero { background: var(--mist); }
 
+/* Standard top padding for two sections that follow another section or page hero.
+   Scoped by class so the diagnosis band keeps its own spacing. */
+.editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.wt-coaching:not(.section--alt) { padding-top: var(--section-pad-mobile); }
+@media (min-width: 768px) {
+  .editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.wt-coaching:not(.section--alt) { padding-top: var(--section-pad-tablet); }
+}
+@media (min-width: 1200px) {
+  .editorial-page > .section:not(.section--alt):not(.cta-banner) + .section.wt-coaching:not(.section--alt) { padding-top: var(--section-pad-desktop); }
+}
+.editorial-page > .page-hero + .section.contact-section { padding-top: var(--section-pad-mobile); }
+@media (min-width: 768px) {
+  .editorial-page > .page-hero + .section.contact-section { padding-top: var(--section-pad-tablet); }
+}
+@media (min-width: 1200px) {
+  .editorial-page > .page-hero + .section.contact-section { padding-top: var(--section-pad-desktop); }
+}
+
